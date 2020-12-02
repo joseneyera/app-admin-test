@@ -1,4 +1,3 @@
-@import "~bootstrap/scss/bootstrap";
 //= require jquery
 //= require popper
 //= require bootstrap

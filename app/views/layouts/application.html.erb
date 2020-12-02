@@ -11,6 +11,7 @@
     <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     
+
     <%= stylesheet_link_tag "sb-admin-2.min" %>
   </head>
 
@@ -347,6 +348,11 @@
                                 <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                 Logout
                             </a>
+
+                            <%= link_to destroy_user_session_path, method: :delete, class: "dropdown-item" do %>
+                            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Logout
+                            <%end%>
                         </div>
                     </li>
 
@@ -405,7 +411,7 @@
     </div>
 
 
-    
+
 
   </body>
 </html>
