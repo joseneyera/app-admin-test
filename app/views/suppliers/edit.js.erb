@@ -1,0 +1,8 @@
+// Add the dialog title
+$('#modal-proveedores-title').html("Editar Proveedor");
+
+//Render the new form
+$('.modal-body-proveedores').html('<%= j render("form") %>');
+
+//Show the dynamic dialog
+$('#modalProveedores').modal("show");
