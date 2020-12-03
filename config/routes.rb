@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   root to: 'home#index'
   resources :categories
   resources :clients
+  resources :suppliers
+  resources :products
   #jag
 end
